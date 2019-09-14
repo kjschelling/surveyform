@@ -1,0 +1,47 @@
+body {}
+
+.title-div {
+  display: flex-wrap;
+  margin: auto;
+  width: 350px;
+}
+
+#title {
+  text-align: center;
+  font-family: ;
+}
+
+.survey-div {
+  margin: 20px auto;
+  width: 300px;
+  background-color: gray;
+  padding: 50px;
+  border-radius: 10px;
+}
+
+#description {
+  text-align: center;
+}
+
+.name-div, .email-div, .age-div, .dropdown-div, .submit-button {
+  margin: 25px;
+}
+
+label {
+  font-family: Monospace;
+}
+
+input {
+  border: 1px solid #999;
+  border-radius: 3px;
+  -webkit-appearance: none;
+  height: 15px;
+}
+
+#checkbox-div {
+  display: flex-wrap;
+}
+
+#once #twice #3x #4x #5x #6x #7x {
+  margin: auto;
+}

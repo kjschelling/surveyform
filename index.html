@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang = "en-US">
+<head>
+  <meta charset="UTF-8">
+  <title>title</title>
+  <link rel="stylesheet" type="text/css" href="main.css" />
+</head>
+
+<body>
+  <div class="title-div">
+    <h1 id="title">Survey Form</h1>
+    <p id="description">this is a description of what the survey is about</p>
+  </div>
+
+  <div class="survey-div">
+    <form action="/submit-survey" id="survey-form">
+      <div class="name-div">
+        <label for="name" id="name-label">Name:</label>
+        <input type="text" name="name" id="name" placeholder="          First & Last" required>
+      </div>
+      <div class="email-div">
+        <label for="email" id="email-label">Email:</label>
+        <input type="email" id="email" name="email" placeholder="    What's your email?" required>
+      </div>
+      <div class="age-div">
+        <label for="age" id="number-label">Age:</label>
+        <input id="number" name="age" type="number" placeholder="     ?" min="12" max="150" required>
+      </div>
+
+      <div class="dropdown-div">
+        <label for="dropdown">Gender:</label>
+        <select id="dropdown">
+          <option value="male">Male</option>
+          <option value="female">Female</option>
+          <option value="transmale">TransMale</option>
+          <option value="transfemale">TransFemale</option>
+          <option value="nonbinary">Non Binary</option>
+          <option value="other">Other</option>
+          <option value="decline-to-answer">Decline to Answer</option>
+        </select>
+      </div>
+      <!--  radio button div start  -->
+      <div id="radio-button-div">
+        <p>What is your diet like?</p>
+        <div>
+          <input type="radio" id="vegan" name="diet" value="vegan" checked>
+          <label for="vegan">Vegan</label>
+        </div>
+
+        <div>
+          <input type="radio" id="vegetarian" name="diet" value="vegetarian">
+          <label for="vegetarian">Vegetarian</label>
+        </div>
+
+        <div>
+          <input type="radio" id="no-red-meat" name="diet" value="no red meat">
+          <label for="no-red-meat">No Red Meat</label>
+        </div>
+
+        <div>
+          <input type="radio" id="no-pork" name="diet" value="no pork">
+          <label for="no-pork">No Pork</label>
+        </div>
+
+        <div>
+          <input type="radio" id="pescatarian" name="diet" value="pescatarian">
+          <label for="pescatarian">Pescatarian</label>
+        </div>
+
+        <div>
+          <input type="radio" id="other" name="diet" value="other">
+          <label for="other">Other</label>
+        </div>
+      </div>
+        <!--  radio div end  -->
+
+        <!--  checkbox div start   -->
+        <div id="checkbox-div">
+
+          <p>How many times do you exercise in a week?</p>
+          <div>
+            <input type="checkbox" id="once" name="excercise" value="once">
+            <label for="once">Once</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="twice" name="excercise" value="twice">
+            <label for="twice">Twice</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="4x" name="exercise" value="4 times">
+            <label for="34x">4 Times</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="5x" name="exercise" value="5 times">
+            <label for="5x">5 Times</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="3x" name="exercise" value="3 times">
+            <label for="3x">3 Times</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="6x" name="exercise" value="6 times">
+            <label for="6x">6 Times</label>
+          </div>
+
+          <div>
+            <input type="checkbox" id="7x" name="exercise" value="7 times">
+            <label for="7x">7 Times</label>
+          </div>
+        </div>
+        <!-- checkbox div end  -->
+
+
+        <button class="submit-button" type="submit" id="submit">Submit</button>
+    </form>
+  </div>
+
+  <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
+</body>
+
+</html>
